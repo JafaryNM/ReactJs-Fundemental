@@ -15,17 +15,7 @@ const root = ReactDOM.createRoot(el);
 
 function App() {
   // create props
-  const message='Enter age'
-  const type="number"
-  return (<input 
-  type={type}
-  min={5} 
-  max={10}
-  list={[1,2,3]}
-  style={{border:'3px solid red'}}
-  alt={message}
-  />
-  );
+  return <textarea autoFocus={true}  />
 }
 
 // 5) Show components on screen
