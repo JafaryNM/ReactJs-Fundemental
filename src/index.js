@@ -14,11 +14,14 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a components
 
 function App() {
-  const date=new Date();
-  const time=date.toLocaleDateString();
-  
-
-  return <h1>{time}</h1>;
+  const message='Hello';
+  const sum=23;
+  return(
+    <div>
+      <div>{message}</div>
+      <div>{sum}</div>
+    </div>
+  );
   
 }
 
