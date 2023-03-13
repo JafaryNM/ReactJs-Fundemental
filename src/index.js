@@ -14,8 +14,8 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a components
 
 function App() {
-  // Rule of props numbers
-  return <input maxLength={5} />
+  // Rule of boolean
+  return <input spellCheck={false} />
 }
 
 // 5) Show components on screen
