@@ -14,19 +14,11 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a components
 
 function App() {
-  // Passing variabe in Jsx
-  //react fail to render boolen value
-  const value = true  ;
-  // react object
-
+  const date=new Date();
+  const time=date.toLocaleDateString();
   
-  const arrayValue=[1,2,3]
-  let message = "Bye there !";
-  if (Math.random() > 0.5) {
-    message = "Hello there";
-  }
 
-  return <h1>{value}{arrayValue}</h1>;
+  return <h1>{time}</h1>;
   
 }
 
