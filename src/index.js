@@ -14,15 +14,18 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a components
 
 function App() {
-  const message='Hello';
-  const sum=23;
-  return(
-    <div>
-      <div>{message}</div>
-      <div>{sum}</div>
-    </div>
+  // create props
+  const message='Enter age'
+  const type="number"
+  return (<input 
+  type={type}
+  min={5} 
+  max={10}
+  list={[1,2,3]}
+  style={{border:'3px solid red'}}
+  alt={message}
+  />
   );
-  
 }
 
 // 5) Show components on screen
