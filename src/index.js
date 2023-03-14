@@ -2,6 +2,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+import MyApp from "./App";
 
 // 2) Get a reference to the div with ID root
 
@@ -11,12 +12,6 @@ const el = document.getElementById("root");
 
 const root = ReactDOM.createRoot(el);
 
-// 4) Create a components
+// 4) Show components on screen
+root.render(<MyApp/>)
 
-function App() {
-  // Rule of boolean
-  return <input spellCheck={false} />
-}
-
-// 5) Show components on screen
-root.render(<App />);
